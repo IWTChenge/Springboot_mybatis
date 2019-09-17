@@ -18,4 +18,9 @@ public class StudentServiceImpl implements StudentService {
     public List<Student> selectAll() {
         return studentDao.selectAll();
     }
+
+    @Override
+    public List<Student> selectAll2() {
+        return studentDao.selectAll2();
+    }
 }

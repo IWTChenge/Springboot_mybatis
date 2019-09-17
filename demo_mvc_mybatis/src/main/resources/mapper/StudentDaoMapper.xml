@@ -4,4 +4,5 @@
     <select id="selectAll" resultType="com.example2.demo_mvc_mybatis.pojo.Student">
         select * from student
     </select>
+
 </mapper>
