@@ -67,6 +67,14 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student :"+name+" "+"id"+student_id;
+        return "Student{" +
+                "student_id='" + student_id + '\'' +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ", locked='" + locked + '\'' +
+                ", gmt_created='" + gmt_created + '\'' +
+                ", gmt_modified='" + gmt_modified + '\'' +
+                '}';
     }
 }

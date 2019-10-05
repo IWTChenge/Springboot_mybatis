@@ -36,4 +36,22 @@ public class StudentController {
        map.put("resualt",ls);
        return map;
     }
+
+    //httpclient 测试
+    @RequestMapping(value = "/httpclientgetnoparam" ,method = RequestMethod.GET)
+    public String doGetcontroner1(){
+        return "无参";
+    }
+    @RequestMapping(value = "/httpclientgethasparam",method = RequestMethod.GET)
+    public String doGetcontroner2(String name){
+        return "hello"+name;
+    }
+    @RequestMapping(value = "/httpclientpostnoparam" ,method = RequestMethod.POST)
+    public String doPostcontroner1(){
+        return "无参";
+    }
+    @RequestMapping(value = "/httpclientposthasparam" ,method = RequestMethod.POST)
+    public String doPostcontroner2(String name){
+        return "hello"+name;
+    }
 }
